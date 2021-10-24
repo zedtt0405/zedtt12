@@ -8,7 +8,7 @@ namespace Lab_4.model
     public partial class StudentContextDB : DbContext
     {
         public StudentContextDB()
-            : base("name=StudentContextDB1")
+            : base("name=StudentContextDB")
         {
         }
 

@@ -15,5 +15,7 @@ namespace Lab_4.model
 
         [StringLength(200)]
         public string FacultyName { get; set; }
+
+        public int? TotalProfessor { get; set; }
     }
 }

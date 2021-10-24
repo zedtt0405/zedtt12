@@ -13,10 +13,10 @@ using Lab_4.model;
 
 namespace Lab_4
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
         StudentContextDB context = new StudentContextDB();
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
             
@@ -130,6 +130,14 @@ namespace Lab_4
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmFalculty frmFal = new frmFalculty();
+            frmFal.Closed += (s, args) => this.Close();
+            frmFal.Show();
         }
     }
 }
