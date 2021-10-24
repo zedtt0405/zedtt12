@@ -14,6 +14,9 @@ namespace Lab_4.model
 
         public virtual DbSet<Falculty> Falculties { get; set; }
         public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<Order> Order { get; set; }
+        public virtual DbSet<Invoice> Invoice { get; set; }
+        public virtual DbSet<Product> Product { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -139,6 +139,14 @@ namespace Lab_4
             frmFal.Closed += (s, args) => this.Close();
             frmFal.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmOrder _frmOrder = new frmOrder();
+            _frmOrder.Closed += (s, args) => this.Close();
+            _frmOrder.Show();
+        }
     }
 }
 
